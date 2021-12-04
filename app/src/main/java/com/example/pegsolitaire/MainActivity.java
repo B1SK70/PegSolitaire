@@ -40,9 +40,6 @@ public class MainActivity extends AppCompatActivity {
         setListeners();
         representGameBoard();
 
-
-        //button.setOnClickListener(corkyListener);
-
     }
 
     private void representGameBoard() {
@@ -135,7 +132,6 @@ public class MainActivity extends AppCompatActivity {
     private void holdCircle(int x, int y) {
         allC[x][y].setBackground(getDrawable(R.drawable.selectedcircle));
     }
-
 
     private int[] getJumpedCell(int[] from, int[] to) {
         if (from[0] == to[0]) {
