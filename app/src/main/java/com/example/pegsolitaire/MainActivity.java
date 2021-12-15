@@ -38,11 +38,11 @@ public class MainActivity extends AppCompatActivity {
 
         identifyCells();
         setListeners();
-        representGameBoard();
+        initialBoardPaint();
 
     }
 
-    private void representGameBoard() {
+    private void initialBoardPaint() {
         for (int x = 0; x <= 6; x++) {
             for (int y = 0; y <= 6; y++) {
                 switch (boardStatus[x][y]) {
